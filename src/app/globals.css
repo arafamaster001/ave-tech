@@ -1,0 +1,121 @@
+@import "tailwindcss";
+*{
+  box-sizing: border-box;
+  /* padding: 0; */
+  /* margin: 0; */
+}
+body {
+  /* font-family: var(--font-inter), Playfair Display; */
+  /* font-weight: 400; */
+  /* padding: 0 5%; */
+}
+header{
+  background-color: #FDFBF7;
+}
+
+h2{
+    font-family: var(--font-inter), sans-serif;
+
+}
+
+/* Logo */
+.logo-text {
+  font-family: var(--font-playfair), serif;
+  font-weight: 800;
+}
+
+/* Hero Heading */
+.hero-heading {
+  font-family: var(--font-playfair), serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+/* Section Headings */
+.section-heading {
+  font-family: var(--font-playfair), serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+/* Navigation */
+.navlinks{
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  
+}
+
+/* Buttons */
+.btn {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Stats Numbers */
+.stat-number {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* Card Titles */
+.card-title {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+
+
+.slide-container {
+  animation: slideTransition 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.slide-in-right {
+  animation: slideInFromLeft 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.slide-in-left {
+  animation: slideInFromRight 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideTransition {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* 
+.hero-image{
+  box-shadow: 10px 10px 25px #FDFBF7;
+} */
